@@ -1,0 +1,5 @@
+package com.citiustech.externalizeconfigdemo.config;
+
+public class MyConfig {
+
+}

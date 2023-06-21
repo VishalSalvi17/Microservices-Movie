@@ -1,0 +1,23 @@
+package com.citiustech.externalizeconfigdemo.controller;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HomeController {
+	
+	@Value("${app.version}")
+	private String appVersion;
+	
+	@Value("${app.name}")
+	private String appName;
+	
+	@Value("${app.author}")
+	private String appAauthor;
+	
+	@GetMapping("/properties")
+	public String getProperties(){
+		return String.format("App Version => %s | App Name => %s | App Author Name => %s%n", appVersion,appName,appAauthor);
+	}
+}

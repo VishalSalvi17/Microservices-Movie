@@ -1,0 +1,5 @@
+package com.citiustech.movieratingservice.controller;
+
+public class MovieRatingController {
+
+}

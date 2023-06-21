@@ -1,0 +1,5 @@
+package com.citiustech.externalizeconfigdemo.controller;
+
+public class HomeController {
+
+}

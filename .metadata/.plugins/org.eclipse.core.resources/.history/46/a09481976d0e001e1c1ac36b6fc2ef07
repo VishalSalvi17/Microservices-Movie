@@ -1,0 +1,42 @@
+package com.citiustech.externalizeconfigdemo.controller;
+
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HomeController {
+	
+	@Value("${app.version}")
+	private String appVersion;
+	
+	@Value("${app.name}")
+	private String appName;
+	
+	@Value("${app.author}")
+	private String appAauthor;
+	
+	@Value("#{${database.config}}")
+	private Map<String, String> databaseConfig;
+	
+	@Value("${server.ips}")
+	private List<String> serverIPs;
+	
+	@GetMapping("/properties")
+	public String getProperties(){
+		return String.format("App Version => %s | App Name => %s | App Author Name => %s%n", appVersion,appName,appAauthor);
+	}
+	
+	@GetMapping("/dbconfig")
+	public Map<String, String> getDatabaseConfig(){
+		return databaseConfig;
+	}
+	
+	@GetMapping("/server-ips")
+	public List<String> getServerIps(){
+		return serverIPs;
+	}
+}

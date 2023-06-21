@@ -1,0 +1,7 @@
+package com.citiustech.moviedetailsservice.repository;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface MovieRepository extends MongoRepository<T, ID> {
+
+}

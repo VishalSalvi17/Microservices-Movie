@@ -1,0 +1,5 @@
+package com.citiustech.movieratingservice.model;
+
+public class MovieRating {
+
+}

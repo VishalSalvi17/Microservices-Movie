@@ -1,0 +1,5 @@
+package com.citiustech.moviecatalogservice.controller;
+
+public class MovieCatalogController {
+
+}

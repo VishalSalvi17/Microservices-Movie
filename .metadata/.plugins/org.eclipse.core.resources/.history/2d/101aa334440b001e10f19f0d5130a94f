@@ -1,0 +1,7 @@
+package com.citiustech.moviecatalogservice.model;
+
+public class MovieCatalog {
+	
+	private String username;
+	private List<CatalogItem> catalogItems
+}

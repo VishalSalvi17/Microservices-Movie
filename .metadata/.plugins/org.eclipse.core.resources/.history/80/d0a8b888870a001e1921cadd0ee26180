@@ -1,0 +1,7 @@
+package com.citiustech.movieratingservice.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface MovieRatingRepository extends JpaRepository<T, ID> {
+
+}

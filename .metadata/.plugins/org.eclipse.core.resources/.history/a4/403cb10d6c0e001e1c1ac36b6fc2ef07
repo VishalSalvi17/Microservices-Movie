@@ -1,0 +1,5 @@
+app.version=1.0
+app.name=externalize-config-demo
+app.author=vishal.salvi@gmail.com
+
+database.config={dburl: "jdbc:mysql://localhost:3306/hr",username:"admin",password:"admin@124",driverClassName:"com.mysql.cj.jdbc.MySQL"}

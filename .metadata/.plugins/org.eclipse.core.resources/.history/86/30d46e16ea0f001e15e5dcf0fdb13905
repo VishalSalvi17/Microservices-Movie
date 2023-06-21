@@ -1,0 +1,9 @@
+server.port=8081
+spring.application.name=movie-details-service
+
+eureka.client.service-url.defaultZone=http://localhost:9999/eureka
+
+#database
+spring.data.mongodb.host=localhost
+spring.data.mongodb.database=movieapp
+spring.data.mongodb.port=27017

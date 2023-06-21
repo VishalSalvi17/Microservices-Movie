@@ -1,0 +1,5 @@
+package com.citiustech.moviedetailsservice.model;
+
+public class Movie {
+
+}

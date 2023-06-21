@@ -1,0 +1,13 @@
+package com.citiustech.externalizeconfigdemo.controller;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HomeController {
+	
+	@Value("${app.version}")
+	private String appVersion;
+	private String appName;
+	private String appAauthor;
+}
